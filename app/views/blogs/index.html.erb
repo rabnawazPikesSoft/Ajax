@@ -1,0 +1,24 @@
+
+
+<h1>Listing Blogs</h1>
+<div class="row">
+  <div class="col-md-5 col-md-offset-1">
+    <h2>Tasks</h2>
+  </div>
+  <div class="col-md-2 col-md-offset-4">
+   <%= link_to 'New Blog', new_blog_path, remote: true %>
+      <button class="btn btn-default">New</button>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-2" id="task-form" style="display:none;"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-7 col-md-offset-1" id="tasks">
+    <%= render partial: "display" %>
+  </div>
+</div>
+<div id="task-form"  style="display:none;" ></div>
